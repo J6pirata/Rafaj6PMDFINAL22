@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Livraria.ListagemLivros">
+    <stackyLayout>
+        <Label 
+            Text="Bem vindo Rafael henrique cb3012085"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            BackgroundColor ="blue"/>
+        </label>
+        <Label Text="Lista de Livros" FontSize="20" HorizontalOptions="CenterAndExpand" Margin="0,20,0,10"/>
+
+        <ListView x:Name="livrosListView" Margin="10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding NomeLivro}" FontSize="18"/>
+                            <Label Text="{Binding NomeAutor}" FontSize="16"/>
+                            <Label Text="{Binding EmailAutor}" FontSize="14"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+</ContentView>

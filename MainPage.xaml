@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Livraria.MainPage">
+
+
+    <StackLayout>
+        
+        <Label
+                Text="Livraria"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center"/>
+
+        <Button
+                Text=" Cadastra Livro"
+                BackgroundColor="blue"
+                Command="{Binding CadastrarLivroCommand }"
+                HorizontalOptions="Center" />        
+                
+        <Button
+                Text=" Editar Livro"
+                BackgroundColor="blue"
+                Command="{Binding  EditarTextoCommand }"
+                HorizontalOptions="Center" />
+
+
+        <Button
+                Text=" Excluir Livro"
+                BackgroundColor="blue"
+                Command="{Binding ExcluirDado}"
+                HorizontalOptions="Center" />
+
+
+        <Button
+                Text=" Listar Livros"
+                BackgroundColor="blue"
+                Command="{Binding ListagemLivros}"
+                HorizontalOptions="Center" />
+
+    </StackLayout>
+    
+
+</ContentPage>
